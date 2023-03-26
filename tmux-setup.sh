@@ -26,4 +26,4 @@ echo "[+] Your custom payload url: $url"
 # echo "$url" > output.txt
 
 # Replace $FIXME variable in another file with the contents of $output
-sed -i "s#\{FIXME}#$url#g" creator.ps1
+sed -i "s#{FIXME}#$url#g" creator.ps1
