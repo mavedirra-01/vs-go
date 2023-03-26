@@ -6,7 +6,7 @@ import subprocess
 pattern = re.compile(r'\b[A-Z0-9]{4}-[A-Z0-9]{4}\b')
 
 # Define the file path to monitor
-file_path = '$HOME/output.log'
+file_path = os.path.expanduser('~/output.log')
 
 # Initialize a list to store detected codes
 detected_codes = []
