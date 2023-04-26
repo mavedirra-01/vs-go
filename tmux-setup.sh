@@ -22,4 +22,4 @@ output=$(tmux capture-pane -p -S - -E - -t client | grep -v "Listing 1 payload f
 url=$(echo "$output" | grep -o '\[INF\] .*' | sed 's/\[INF\] //')
 echo "[+] Your custom payload url: $url"
 
-sed -i "s/FIXME/$url/g" creator.ps1
+sed -i "s/FIXME/$url/g" creator.ps1 
